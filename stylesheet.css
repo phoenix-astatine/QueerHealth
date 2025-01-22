@@ -1,0 +1,277 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00796b;
+}
+
+.conditions {
+    color: #004d40;
+    text-emphasis: filled green ;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul a:hover {
+    background-color: #00796b;
+    color: #fff;
+}
+
+#submit1 {
+    border-radius: 10px;
+    width: 75px;
+    background-color: #00796b;
+}
+
+form button {
+    cursor: pointer; /* Changes cursor to a hand on hover */
+    background-color: #00796b; /* Default button color */
+    color: white;
+    border: none;
+    padding: 3px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+form button:hover {
+    background-color: #005a4c; /* Changes background color on hover */
+}
+
+
+.donate-button {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.donate-button a.donate {
+    display: block;
+    background-color: #e91e63;
+    color: white;
+    text-align: center;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.donate-button a.donate:hover {
+    background-color: #c2185b;
+    transform: scale(1.1);
+}
+
+.background {
+    background-image: url(./asset/melanie-kreutz-2yr4-1-vWxA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.textbox {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* Story and mission section styling */
+.story-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.story-section h2 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.story-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-text {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.story-image {
+    flex: 1;
+    text-align: center;
+}
+
+.story-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Health services section */
+.health-services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.health-services h2 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.service-list li {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-list li:hover {
+    transform: translateY(-5px);
+    background-color: #e6f7ff;
+}
+
+/* Help section */
+.help-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e3f2f1;
+}
+
+.help-section h2 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.help-section p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #004d40;
+}
+
+/* Support section */
+.support-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.support-section h2 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.support-section p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
